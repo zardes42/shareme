@@ -1,0 +1,2 @@
+# shareme- A
+## A REACT APP IMPLEMENTING SANITY CMS 
