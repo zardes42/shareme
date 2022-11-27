@@ -4,12 +4,12 @@ export default  {
     type :'document',
     fields: [
        { 
-        name: 'userNmae',
+        name: 'userName',
         title : 'UserName',
         type:'string'
     },
    {
-    name: 'imgae',
+    name: 'image',
     title : 'Image',
     type:'string'
    },
