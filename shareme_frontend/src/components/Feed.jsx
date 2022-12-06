@@ -1,17 +1,15 @@
-import React,{useState, useEffect} from 'react'
-import { useParams } from 'react-router-dom'
-import {client} from '../client'
-import { searchQuery,feedQuery } from '../utils/data'
-import MasonryLayout from './MasonryLayout'
-import Spinner from './Spinner'
-
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { client } from "../client";
+import { searchQuery, feedQuery } from "../utils/data";
+import MasonryLayout from "./MasonryLayout";
+import Spinner from "./Spinner";
 
 const Feed = () => {
-
-  const [loading,setLoading] = useState(false);
-  const [pins, setPins] = useState(null)
-  const {categoryId} = useParams();
-  console.log(pins)
+  const [loading, setLoading] = useState(false);
+  const [pins, setPins] = useState(null);
+  const { categoryId } = useParams();
+  console.log(pins);
   useEffect(() => {
     if (categoryId) {
       setLoading(true);
@@ -30,10 +28,9 @@ const Feed = () => {
     }
   }, [categoryId]);
 
-  if(loading) return <Spinner message="We are adding new ideas to your field" />
-  return (
-    <div>{pins && <MasonryLayout pins={pins} />}</div>
-  )
-}
+  if (loading)
+    return <Spinner message="We are adding new ideas to your field" />;
+  return <div>{pins && <MasonryLayout pins={pins} />}</div>;
+};
 
-export default Feed
+export default Feed;

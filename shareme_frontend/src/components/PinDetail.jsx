@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const PinDetail = () => {
-  return (
-    <div>PinDetail</div>
-  )
-}
+  return <div>PinDetail</div>;
+};
 
-export default PinDetail
+export default PinDetail;
