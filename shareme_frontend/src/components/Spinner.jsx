@@ -1,21 +1,20 @@
-import React from 'react'
-import {Audio} from 'react-loader-spinner'
+import React from "react";
+import { Audio } from "react-loader-spinner";
 
-const Spinner = ({message}) => {
+const Spinner = ({ message }) => {
   return (
     <div className="flex flex-col justify-center items-center w-full h-full">
-        <Audio
-        
-        type='Circles' 
-        color='#00BFFF'
+      <Audio
+        type="Circles"
+        color="#00BFFF"
         height={50}
         width={200}
-        className='m-5'
-        />
-        
-        <p className='tetx-lg text-center px-2'>{message}</p>
-        </div>
-  )
-}
+        className="m-5"
+      />
 
-export default Spinner
+      <p className="tetx-lg text-center px-2">{message}</p>
+    </div>
+  );
+};
+
+export default Spinner;
