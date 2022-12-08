@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { IoMdAdd, IoMdSearch } from "react-icons/io";
 const Navbar = ({ searchTerm, setSearchTerm, user }) => {
   const navigate = useNavigate();
+  console.log(user?._id,'navbar')
   if (!user) return null;
 
   return (
