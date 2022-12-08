@@ -115,7 +115,7 @@ const PinDetail = ({ user }) => {
               <img
                 src={comment?.postedBy?.image}
                 alt="user-profile"
-                className="w-20 h-10 rounded-full cursor-pointer"
+                className="w-10 h-10 rounded-full cursor-pointer"
               />
               <div className="flex flex-col ">
                 <p className="font-bold ">{comment.postedBy.userName}</p>
